@@ -1,14 +1,161 @@
-<html lang="en">
+<!DOCTYPE html>
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>My Portfolio</title>
+  <title>School Survey</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Welcome to my homepage!</h1>
-  <p>Here is some text</p>
-  <img src="48166_colorful_38.jpg" alt="Color in a cirlce">
+  <div class="header">
+    <h1>NEVADA SCHOOL SURVEY</h1>
+  </div>
+  
+  <div class="list">
+    <nav>
+      <ul>
+        <li><a href="#introduction">About The Survey</a></li>
+        <li><a href="#staff">Staff Survey</a></li>
+        <li><a href="#middleSchool">Middle School Survey</a></li>
+        <li><a href="#highSchool">High School Survey</a></li>
+      </ul>
+    </nav>
+  </div>
+  
+  <div id="introduction">
+    <h2>About The Survey</h2>
+    <p id="intro">The Nevada School Survey is how you see your school in your own way. There will be 3 sections in this Survey which are the <em><strong>Staff, Middle School, and High School</strong></em>. Anyone could take the survey if you are a Staff Member, Middle Schoolers, or High Schoolers.<br/><br/> If you are not a student or don't know anything about any school, you can still take this survey if you like.</p>
+    <img src="http://zinnyfactor.com/wp-content/uploads/2017/01/survey.png" alt="SURVEY TIME" id="">
+  </div>
+ 
+  <div id="staff">
+    <h2>Staff Survey</h2>
+    <p><strong>Hello Staff Member,</strong><br/>there will be 4 questions in the Staff Survey each member who is on the table will answer 2 questions. This Survey is for <em>the Staff, Middle School Teacher, and High School Teacher</em>.</p>
+    
+    <table> <!-- Table -->
+      <thead>
+        <tr> <!-- Row 1 -->
+          <th colspan="3">School</th>
+        </tr>
+        <tr> <!-- Row 2 -->
+          <th scope="col">Staff</th>
+          <th scope="col">MS Teacher</th>
+          <th scope="col">HS Teacher</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr> <!-- Row 3 -->
+          <td>Staff Member who work at the School</td>
+          <td>MS Teacher who teach Middle School Student</td>
+          <td>HS Teacher who teach High School Student</td>
+        </tr>
+        <tr> <!-- Row 4 -->
+          <td>answer Question 1 and 4</td>
+          <td>answer Question 2 and 4</td>
+          <td>answer Question 3 and 4</td>
+        </tr>
+      </tbody> 
+    </table>
+    
+  <section id="overlay"> <!-- EA Staff Survey -->
+    <form action="submission.html" method="POST">
+        <hr>
+        <section class="extra-info">
+          <label for="extra">Question 1) Why do you want to work in this school?</label>
+          <br>
+          <textarea id="extra" name="extra" rows="2" cols="60"></textarea>
+        </section>
+        <section class="extra-info">
+          <label for="extra">Question 2) What is the hardest thing about being a teacher?</label>
+          <br>
+          <textarea id="extra" name="extra" rows="2" cols="60"></textarea>
+        </section>
+          <section class="extra-info">
+          <label for="extra">Question 3) At what rate do you think your teaching went in this school?</label>
+          <br>
+          <label for="extra">Great</label>
+          <br>
+          <span> Just Good</span>
+          <input type="range" name="teaching" id="teaching" value="3" min="1" max="5">
+          <span>Astounding</span>
+        </section>
+        <section class="extra-info">
+          <label for="extra" id="extra-special"> Special Question 4) What is the worst thing about the school system today?</label>
+          <br>
+          <textarea id="extra" name="extra" rows="2" cols="60"></textarea>
+        </section>
+      </form>
+    </section> 
+  </div>
+  <hr>
+  <div id="middleSchool">
+    <h2>Middle School Survey</h2>
+    <p><strong>Hello Middle School Student,</strong><br/>there will be 4 questions for you. These questions are going to be about you in school. If you want to see Middle School around Nevada before taking the survey just go to this site below.</p>
+    <a href="https://www.schooldigger.com/go/NV/schoolrank.aspx?level=2" target="_blank">Middle School in Nevada</a>
+    
+    <section id="overlay"> <!-- Middle School Survey -->
+      <form action="submission.html" method="POST">
+        <hr>
+        <section class="extra-info">
+          <label for="extra">Question 1) What number would you rate all of your teacher?</label>
+          <br>
+          <input type="number" name="amount" id="amount">
+        </section>
+        <section class="extra-info">
+          <label for="extra"> Question 2) What makes a day at school a good day?</label>
+          <br>
+          <textarea id="extra" name="extra" rows="2" cols="60"></textarea>
+        </section>
+        <section class="extra-info">
+          <label for="extra" id="extra-special"> Special Question 3) What do you think your school could do a better job of?</label>
+          <br>
+         <textarea id="extra" name="extra" rows="2" cols="60"></textarea>
+        </section>
+        <section class="extra-info">
+          <label for="extra">Question 4) What do you want to learn about?</label>
+          <br>
+          <textarea id="extra" name="extra" rows="2" cols="60"></textarea>
+        </section>
+      </form>
+    </section>
+  </div>
+  <hr>
+  <div id="highSchool">
+    <h2>High School Survey</h2>
+    <p><strong>Hello High School Student,</strong><br/>there will be 4 questions for you. These questions are going to be about you in school. If you want to see High School around Nevada before taking the survey go to this site below.</p>
+    <a href="https://www.schooldigger.com/go/NV/schoolrank.aspx?level=3" target="_blank">High School in Nevada</a>
+    <section id="overlay"> <!-- High School Survey -->
+      <form action="submission.html" method="POST">
+        <hr>
+        <section class="extra-info">
+          <label for="extra">Question 1) What do you like the least about school?</label>
+          <br>
+          <textarea id="extra" name="extra" rows="2" cols="60"></textarea>
+        </section>
+        <section class="extra-info">
+          <label for="extra">Question 2) What do you want to learn about?</label>
+          <br>
+          <textarea id="extra" name="extra" rows="2" cols="60"></textarea>
+        </section>
+        <section class="extra-info">
+          <label for="extra">Question 3) Are you happy with your grades this year? Why or why not?</label>
+          <br>
+          <input type="radio" name="grades" id="yes" value="yes">
+          <label for="yes">Yes</label>
+          <input type="radio" name="grades" id="maybe" value="yes">
+          <label for="no">Maybe</label>
+          <input type="radio" name="grades" id="no" value="yes">
+          <label for="no">No</label>
+        </section>
+        <section class="extra-info">
+          <label for="extra" id="extra-special"> Special Question 4) If you could change one thing about your school what would it be?</label>
+          <br>
+          <textarea id="extra" name="extra" rows="2" cols="60"></textarea>
+        </section>
+      </form>
+    </section>
+ </div>
+  <hr>
+  <div id="image">
+    <p class="ending">for taking your time to answer this survey.</p>
+  </div>
 </body>
 </html>
