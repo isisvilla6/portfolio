@@ -1,7 +1,141 @@
 body {
-  background: teal;
+  background-image: url("https://vivaldi.com/wp-content/uploads/2018/02/pattern_sayagata.png");
+  font-size: 20px;
+  font-family: 'Brush Script MT', cursive;
 }
 
-h1 {
-  color: gold;
+.header {
+  font-family: 'Brush Script MT', cursive;
+  text-align: center;
+  letter-spacing: 20px;
+  font-size: 30px;
+  background-color: darkgray;
+  padding: 1px;
+  text-shadow: 3px 3px 2px firebrick;
 }
+
+#introduction {
+  text-align: center;
+}
+
+#staff {
+  text-align: center;
+}
+
+#middleSchool {
+  text-align: center;
+}
+
+#highSchool {
+  text-align: center;
+}
+
+#ending {
+  text-align: center;
+}
+
+h2 {
+  font-family: 'Brush Script MT', cursive;
+  letter-spacing: 20px;
+  border: 3px solid;
+  font-size: 45px;
+  line-height: 40px;
+  width: 80%;
+  height: 30%;
+  padding: 20px;
+  margin: auto;
+}
+
+#intro {
+  font-family: 'Brush Script MT', cursive;
+  margin: 0 auto;
+  padding: 40px;
+  text-align: center;
+  width: 950px;
+  height: 130px;
+}
+
+p {
+  font-family: 'Brush Script MT', cursive;
+  margin: 0 auto;
+  padding: 40px;
+  text-align: center;
+  width: 900px;
+  height: 45px;
+}
+
+.ending {
+  text-align: center;
+  display: inline-block;
+  height: 60px;
+  width: 215px;
+  margin: 180px 2px 2px 550px;
+  padding: 30px;
+  background: white;
+  color: black;
+  opacity: 0.35;
+}
+
+#image {
+  background-image: url("https://ui-ex.com/images/minions-transparent-thank-u-1.png");
+  background-size: cotain;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 200px;
+  width: 1350px;
+}
+/* Table */
+
+table {
+  height: 40%;
+  left: 10%;
+  margin: 40px auto;
+  position: static;
+  width: 70%;
+  text-align: center;
+}
+
+thead th {
+  background: darkgray;
+  font-size: 20px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+tr {
+  background: firebrick;
+}
+
+th, td {
+  font-family: 'Brush Script MT', cursive;
+  font-weight: 600;
+  font-size: 18px;
+  padding: 15px;
+  text-align: center;
+}
+/* Table */
+
+/* Form */
+
+.extra-info {
+  font-weight: bold;
+  font-family: 'Brush Script MT', cursive;
+}
+
+#extra-special {
+  color: firebrick;
+  font-family: 'Brush Script MT', cursive;
+}
+
+form {
+  text-align: center;
+  line-height: 30px;
+  height: 80%;
+}
+
+form hr {
+  width: 15%;
+}
+/* Form */
